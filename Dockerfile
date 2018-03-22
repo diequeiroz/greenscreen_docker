@@ -13,7 +13,7 @@ RUN git clone https://github.com/groupon/greenscreen.git ${GREENSCREEN_HOME} && 
 
 ADD start ${GREENSCREEN_HOME}/start
 
-ADD  nginx/greenscreen.conf /etc/nginx/sites-avaliable/default
+ADD  nginx/greenscreen.conf /etc/nginx/sites-available/default
 
 WORKDIR ${GREENSCREEN_HOME}
 

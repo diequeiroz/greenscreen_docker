@@ -9,7 +9,8 @@ RUN git clone https://github.com/groupon/greenscreen.git ${GREENSCREEN_HOME} && 
         rm -rf ${GREENSCREEN_HOME}/.git && \
         apt-get  update && \
         apt-get install -y nginx && \
-        echo "daemon off;" >> /etc/nginx/nginx.conf
+        echo "daemon off;" >> /etc/nginx/nginx.conf && \
+        apt-get clean
 
 ADD start ${GREENSCREEN_HOME}/start
 
